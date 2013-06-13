@@ -1,0 +1,15 @@
+[user]
+  name = wallerjake
+  email = wallerjake@gmail.com
+[alias]
+  s = status
+  co = checkout
+  b = branch
+  l = log
+[color]
+  status = auto
+  branch = auto
+  diff = auto
+
+[core]
+	excludesfile = /Users/jakewaller/.gitignore

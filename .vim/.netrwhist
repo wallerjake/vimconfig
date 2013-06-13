@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/jakewaller/development/sullivan_cotter/app/models'
+let g:netrw_dirhist_2='/Users/jakewaller/development/sullivan_cotter/app/controllers/ces/surveys/organization_characteristics'
+let g:netrw_dirhist_3='/Users/jakewaller/development/sullivan_cotter/app/views/ces/surveys/organization_characteristics/audit'
+let g:netrw_dirhist_4='/Users/jakewaller/development/sullivan_cotter/app/views/ces/surveys'
+let g:netrw_dirhist_5='/Users/jakewaller/development/sullivan_cotter/app/models'
+let g:netrw_dirhist_6='/Users/jakewaller/development/sullivan_cotter/app/views/ces/surveys'
+let g:netrw_dirhist_7='/Users/jakewaller/.vim'
+let g:netrw_dirhist_8='/Users/jakewaller/development/sullivan_cotter/app/models/surveys/physician_compensation'
