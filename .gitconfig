@@ -1,5 +1,5 @@
 [user]
-  name = wallerjake
+  name = Jake Waller
   email = wallerjake@gmail.com
 [alias]
   s = status
@@ -10,6 +10,5 @@
   status = auto
   branch = auto
   diff = auto
-
 [core]
-	excludesfile = /Users/jakewaller/.gitignore
+  excludesfile = /Users/jakewaller/.gitignore
