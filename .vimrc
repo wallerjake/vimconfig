@@ -26,3 +26,23 @@ nmap <Leader>r :RuboCop<CR>
 noremap <F3> :Autoformat<CR><CR>
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=red ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+
+nmap ,f :FufFileWithCurrentBufferDir<CR>
+nmap ,b :FufBuffer<CR>
+nmap ,t :FufTaggedFile<CR>a
+
+nmap <Leader>j :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
+
+if has("spell")
+  " turn spelling on by default
+  set spell
+
+  " toggle spelling with F4 key
+  map <F4> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
+
+  " they were using white on white
+  highlight PmenuSel ctermfg=black ctermbg=lightgray
+
+  " limit it to just the top 10 items
+  set sps=best,10
+endif
