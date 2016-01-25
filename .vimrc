@@ -26,6 +26,10 @@ nmap <Leader>r :RuboCop<CR>
 noremap <F3> :Autoformat<CR><CR>
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=red ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+# autocmd BufWritePost *.html package_javascript.sh When the buffer writes an HTML file this will perform some action
+# autocmd BufWritePost *.js package_javascript.sh When the buffer writes an HTML file this will perform some action
+
+let g:airline#extensions#tabline#enabled = 1
 
 nmap ,f :FufFileWithCurrentBufferDir<CR>
 nmap ,b :FufBuffer<CR>
