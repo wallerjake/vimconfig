@@ -23,6 +23,8 @@ let g:indent_guides_auto_colors = 0
 let g:vimrubocop_keymap = 0
 let g:vimrubocop_config = '.rubocop.yml'
 nmap <Leader>r :RuboCop<CR>
+nnoremap <Leader>puts iputs "#{__FILE__} - #{__LINE__}"<esc>
+nnoremap <Leader>putsn oputs "#{__FILE__} - #{__LINE__}"<esc>
 noremap <F3> :Autoformat<CR><CR>
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=red ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
