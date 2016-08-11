@@ -25,11 +25,10 @@ let g:vimrubocop_config = '.rubocop.yml'
 nmap <Leader>r :RuboCop<CR>
 nnoremap <Leader>puts iputs "#{__FILE__} - #{__LINE__}"<esc>
 nnoremap <Leader>putsn oputs "#{__FILE__} - #{__LINE__}"<esc>
+nnoremap <Leader>pry irequire 'pry'; binding.pry<esc>
 noremap <F3> :Autoformat<CR><CR>
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=red ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
-# autocmd BufWritePost *.html package_javascript.sh When the buffer writes an HTML file this will perform some action
-# autocmd BufWritePost *.js package_javascript.sh When the buffer writes an HTML file this will perform some action
 
 let g:airline#extensions#tabline#enabled = 1
 
@@ -38,6 +37,7 @@ nmap ,b :FufBuffer<CR>
 nmap ,t :FufTaggedFile<CR>a
 
 nmap <Leader>j :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
+nmap <Leader>ja :%s/:\([^=,'"]*\)=>/\1: /gc<CR>
 
 if has("spell")
   " turn spelling on by default
