@@ -64,3 +64,9 @@ cd ~/.vim/bundle && git clone https://github.com/tpope/vim-surround.git
 
 echo "Cloning in ctrlp.vim (https://github.com/kien/ctrlp.vim)"
 cd ~/.vim/bundle && git clone https://github.com/kien/ctrlp.vim.git
+
+echo "Cloning in typescript-vim (https://github.com/leafgarland/typescript-vim)"
+cd ~/.vim/bundle && git clone https://github.com/leafgarland/typescript-vim
+
+echo "Cloning in tsuquyomi (https://github.com/Quramy/tsuquyomi.git)"
+cd ~/.vim/bundle && git clone https://github.com/Quramy/tsuquyomi.git
