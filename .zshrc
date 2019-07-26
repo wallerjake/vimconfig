@@ -27,6 +27,14 @@ alias time_s="toolshed get_daily_time_update --format=\"html\" --use-defaults=tr
 # wallproductions
 alias wallproductions="cd ~/development/ruby/wallproductions; clear;"
 
+function grep_all() {
+  ruby ~/scripts/ultimate_grep.rb $1
+}
+
+function clear_rabbit() {
+  ruby ~/scripts/clear_rabbitmq_messages.rb
+}
+
 function gcheckout() {
  toolshed checkout_branch --branch-name=\"$1\"
 }
