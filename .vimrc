@@ -53,3 +53,8 @@ if has("spell")
   " limit it to just the top 10 items
   set sps=best,10
 endif
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+let &t_Co=256
+set backspace=indent,eol,start
+set pastetoggle=<F6>
