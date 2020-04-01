@@ -4,6 +4,7 @@ call pathogen#helptags()
 set nocompatible
 set smartindent
 set tabstop=2
+set tw=2
 set shiftwidth=2
 set expandtab
 set nu
@@ -29,6 +30,7 @@ nnoremap <Leader>pry irequire 'pry'; binding.pry<esc>
 noremap <F3> :Autoformat<CR><CR>
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=red ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+autocmd BufRead,BufWritePre *.sh normal gg=G
 set laststatus=2
 
 let g:airline#extensions#tabline#enabled = 1
